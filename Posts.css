@@ -1,0 +1,140 @@
+		@font-face {
+			font-family: 'Neo Sans Arabic';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local('Neo Sans Arabic'), url('https://cdn.statically.io/gh/yallashoot808/yalla-shoot-new/6a47ce1e/NeoSansArabic.woff') format('woff')
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+			text-decoration: none;
+			list-style: none;
+			font-family: 'Neo Sans Arabic';
+		}
+
+		.StingApiPost {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 7px 15px;
+			justify-content: center;
+			align-items: center;
+			justify-items: center;
+			align-content: center;
+			position: relative;
+			padding: 10px;
+		}
+
+
+		a.linkPostApi {
+			grid-template-columns: 1fr;
+			font-size: 12px;
+			text-align: center;
+			padding: 3px 3px;
+			color: #000;
+			transition: .3s .1s all ease;
+			line-height: 21px;
+			width: 92%;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			height: 70px;
+			min-height: 70px;
+			max-height: 70px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		div#TableAutoSting1,
+		div#TableAutoSting2,
+		div#TableAutoSting3,
+		div#TableAutoSting4,
+		div#TableAutoSting5,
+		div#TableAutoSting6,
+		div#TableAutoSting7,
+		div#TableAutoSting8 {
+			display: inline-block;
+			z-index: 1;
+			border-radius: 7px;
+			transition: .3s all ease;
+			position: relative;
+			margin-bottom: 10px;
+			overflow: hidden;
+			width: 300px;
+			background: #eee;
+			box-shadow: 0 0 2px 0 #0a0d3714;
+		}
+
+		#TableAutoSting1 img,
+		#TableAutoSting2 img,
+		#TableAutoSting3 img,
+		#TableAutoSting4 img,
+		#TableAutoSting5 img,
+		#TableAutoSting6 img,
+		#TableAutoSting7 img,
+		#TableAutoSting8 img {
+			display: block;
+			width: 300px;
+			height: 200px;
+
+		}
+
+
+		@media screen and (max-width: 720px) {
+
+			.StingApiPost {
+				grid-template-columns: repeat(1, 1fr);
+				gap: 7px 10px;
+			}
+
+			div#TableAutoSting1,
+			div#TableAutoSting2,
+			div#TableAutoSting3,
+			div#TableAutoSting4,
+			div#TableAutoSting5,
+			div#TableAutoSting6,
+			div#TableAutoSting7,
+			div#TableAutoSting8 {
+				display: inline-block;
+				z-index: 1;
+				border-radius: 7px;
+				transition: .3s all ease;
+				position: relative;
+				margin-bottom: 10px;
+				overflow: hidden;
+				width: 100%;
+				box-shadow: 0 0 2px 0 #0a0d3714;
+				height: 105px;
+			}
+
+			#TableAutoSting1 img,
+			#TableAutoSting2 img,
+			#TableAutoSting3 img,
+			#TableAutoSting4 img,
+			#TableAutoSting5 img,
+			#TableAutoSting6 img,
+			#TableAutoSting7 img,
+			#TableAutoSting8 img {
+				height: 105px;
+				width: 35%;
+				float: right;
+			}
+
+			a.linkPostApi {
+				height: 80px;
+				min-height: 80px;
+				max-height: 80px;
+				width: 55%;
+				float: left;
+			}
+
+			a.linkPostApi {
+				font-weight: 500;
+				font-size: 14px;
+				text-align: right;
+				margin-top: 7px;
+			}
+
+		}
