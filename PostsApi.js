@@ -9,6 +9,10 @@ const stingapi = async function get() {
   );
   const media = await responsemedia.json();
 
+  document.getElementsByTagName("head")[0].insertAdjacentHTML(
+    "beforeend",
+    "<link rel=\"stylesheet\" href=\"https://cdn.statically.io/gh/StingTeamDev/api/main/Post.css\" />");
+
   document.querySelector("#TableAutoSting1 img").src = media[0].guid.rendered;
   document.querySelector("#TableAutoSting1 img").alt = data[0].title.rendered;
   document.querySelector("#TableAutoSting1 a").innerHTML =
@@ -56,6 +60,14 @@ const stingapi = async function get() {
   document.querySelector("#TableAutoSting8 a").innerHTML =
     data[7].title.rendered;
   document.querySelector("#TableAutoSting8 .linkPostApi").href = data[7].link;
+
+  console.group("%cSting Posts Auto - api", "font-weight:bold;color:#931800;font-family:Tahoma;font-size:20px;");
+  console.log("~> Designed by   : Mohamed Abu Maher");
+  console.log("~> Programmed by : Sting Web");
+  console.log("~> URL Page FB   : https://fb.com/stingweb.eg");
+  console.log("~> Last Update   : 01 - 08 - 2022");
+  console.log("~> Version       : 1.0");console.groupEnd();
+
 };
 
 stingapi();
