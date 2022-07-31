@@ -84,7 +84,7 @@
     align-content: center;
     position: relative;
     padding: 10px;
-    background: var(--BG3);
+    background: var(--BG2);
 }
 
 a.linkPostApi {
@@ -122,7 +122,7 @@ div#TableAutoSting8 {
     margin-bottom: 10px;
     overflow: hidden;
     width: 230px;
-    background: var(--GD);
+    background: var(--BG3);
     box-shadow: 0 0 2px 0 #0a0d3714;
 }
 
