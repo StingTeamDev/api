@@ -21,7 +21,7 @@ const stingapi = async function get() {
     .getElementsByTagName("head")[0]
     .insertAdjacentHTML(
       "beforeend",
-      '<link rel="stylesheet" href="//cdn.statically.io/gh/StingTeamDev/api/main/Posting.css" />'
+      '<link rel="stylesheet" href="//cdn.statically.io/gh/StingTeamDev/api/main/Pos-api.css" />'
     );
 
   document.querySelector("#TableAutoSting1 img").src = media[1].guid.rendered;
